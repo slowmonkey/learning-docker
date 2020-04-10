@@ -3,6 +3,7 @@ services:
 
   smashtest:
     build: .
+    image: smashtest-docker
     volumes:
       - ./code/smashtest:/code/smashtest
 

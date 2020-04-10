@@ -14,32 +14,8 @@ Ensure nodejs is installed. [Nodejs installation instructions](https://github.co
 
 1. `docker-compose down` - to ensure nothing is left over.
 2. `docker-compose build` - to build the container
-3. `docker-compose up` - to run the application, I have an issue with this because I just want the multiple containers there and me to run `npx smashtest` against the node container 
-
-# How-to Create a docker container
-
-1. Create a Dockerfile
-   1. Specify image to create the docker container from.
-
-Build docker file
-
-```
-docker build --tag smashtest:1.0
-```
-
-Run docker file 
-
-```
-docker run smashtest:1.0
-```
-
-There are options to make this easier
-
-```
---public
---detach
---name
-```
+3. `docker-compose up -d` - Run's a container with node and smashtest code.
+4. `docker run smashtest-docker npx smashtest` - Executes the `npx smashtest` command against the container.
 
 # Current issues:
 - have to run docker-compose build each time I mess with the code to copy the code into the containers.

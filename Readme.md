@@ -10,6 +10,12 @@ Additional steps for creating a docker container will be added to this project r
 
 Ensure nodejs is installed. [Nodejs installation instructions](https://github.com/nodesource/distributions/blob/master/README.md)
 
+# How-to Run
+
+1. `docker-compose down` - to ensure nothing is left over.
+2. `docker-compose build` - to build the container
+3. `docker-compose up` - to run the application, I have an issue with this because I just want the multiple containers there and me to run `npx smashtest` against the node container 
+
 # How-to Create a docker container
 
 1. Create a Dockerfile

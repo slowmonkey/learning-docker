@@ -4,7 +4,7 @@ services:
   smashtest:
     build: .
     volumes:
-      - ./code/smashtest: /code/smashtest
+      - ./code/smashtest:/code/smashtest
 
   firefox:
     image: selenium/node-firefox:latest

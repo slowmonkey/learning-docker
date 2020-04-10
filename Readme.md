@@ -1,5 +1,7 @@
 # Introduction
 
+Main purpose of this project is to learn how to create a docker container.
+
 This projects runs smashtest via a docker container.
 
 Additional steps for creating a docker container will be added to this project readme.
@@ -32,3 +34,8 @@ There are options to make this easier
 --detach
 --name
 ```
+
+# Current issues:
+- have to run docker-compose build each time I mess with the code to copy the code into the containers.
+- Can map the smashtest report volume back out into the host machine folder.
+- Can't seem to connect the standalone browser to the internet.

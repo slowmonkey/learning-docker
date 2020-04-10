@@ -43,5 +43,6 @@ There are options to make this easier
 
 # Current issues:
 - have to run docker-compose build each time I mess with the code to copy the code into the containers.
-- Can map the smashtest report volume back out into the host machine folder.
-- Can't seem to connect the standalone browser to the internet.
+
+# Lessons learnt:
+- yml files are very specific with whitespace for name:value and everything else.

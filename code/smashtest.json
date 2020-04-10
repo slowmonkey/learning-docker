@@ -1,3 +1,4 @@
 {
-    "test-server": "http://172.21.0.5:4444/wd/hub"
+    "screenshots": true,
+    "test-server": "http://host.docker.internal:4444/wd/hub"
 }

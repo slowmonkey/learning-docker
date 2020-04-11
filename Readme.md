@@ -25,9 +25,6 @@ Ensure nodejs is installed. [Nodejs installation instructions](https://github.co
 2. `docker container prune -f`
 3. `docker image prune -f --all`
 
-# Current issues:
-- Have to run docker-compose build each time I mess with the code to copy the code into the containers.
-
 # Lessons learnt:
 - yml files are very specific with whitespace for name:value and everything else.
 - best not to use a latest specified image as it seems docker-compose will always check and download it.

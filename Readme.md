@@ -31,4 +31,4 @@ Ensure nodejs is installed. [Nodejs installation instructions](https://github.co
 # Lessons learnt:
 - yml files are very specific with whitespace for name:value and everything else.
 - best not to use a latest specified image as it seems docker-compose will always check and download it.
-- This maybe obvious but dockerfile and docker-compose have differences. and when to use them to run/volume map etc matters.
+- This maybe obvious but dockerfile and docker-compose have differences understanding what's runnig from which section is important. Eg. When to use them to run/volume map etc matters.

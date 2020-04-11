@@ -1,11 +1,13 @@
 version: "3.7"
 services:
 
-  smashtest:
+  testserver:
     build: .
     image: smashtest-docker
     volumes:
-      - ./code/smashtest:/code/smashtest
+      - ./code:/code
+    depends_on:
+      - hub
 
   firefox:
     image: selenium/node-firefox:latest

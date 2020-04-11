@@ -15,7 +15,7 @@ Ensure nodejs is installed. [Nodejs installation instructions](https://github.co
 1. `docker-compose down` - to ensure nothing is left over.
 2. `docker-compose build` - to build the container
 3. `docker-compose up -d` - Run's a container with node and smashtest code.
-4. `docker run smashtest-docker npx smashtest` - Executes the `npx smashtest` command against the container.
+4. `docker-compose run --rm testserver npx smashtest` - Executes the `npx smashtest` command against the docker-compose'd container.
 
 # How-to Clean-up
 
@@ -30,3 +30,4 @@ Ensure nodejs is installed. [Nodejs installation instructions](https://github.co
 
 # Lessons learnt:
 - yml files are very specific with whitespace for name:value and everything else.
+- best not to use a latest specified image as it seems docker-compose will always check and download it.

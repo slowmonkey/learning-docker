@@ -5,9 +5,7 @@ services:
     build: .
     image: smashtest-docker
     volumes:
-      - ./code:/code
-    depends_on:
-      - hub
+      - ./code/:/code/
 
   firefox:
     image: selenium/node-firefox:latest

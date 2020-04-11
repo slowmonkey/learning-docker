@@ -4,4 +4,4 @@ WORKDIR /code/
 
 COPY ./code/ .
 
-RUN cat ./smashtest.json
+# RUN cat ./smashtest.json
